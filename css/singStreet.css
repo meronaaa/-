@@ -1,0 +1,19 @@
+/* 싱스트리트 css파일 */
+
+.menu {
+    background-color: #57bca8; 
+}
+
+/* 배경 이미지 */
+body {
+    background: url("../img/sing_street/singstreet-blur.jpg") no-repeat fixed;
+    background-size: cover;
+}
+#fullpage section:nth-child(1){
+    background:url("../img/sing_street/singstreet-top.jpg") no-repeat; /* 배경 노-리피트 사이즈 커버해서 이미지 다른 변형없게*/
+    background-size:cover;                       /* 했고 창크기에 맞게 맞춰집니다.*/
+}
+
+.box {
+    background: rgba(255, 255, 255, .5);
+}

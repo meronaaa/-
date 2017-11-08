@@ -1,0 +1,183 @@
+@font-face {
+    font-family: NNMJ;
+    src: url(../fonts/NanumMyeongjo.ttf);
+}
+
+/* 페이지 전환 CSS */
+#fullpage{
+    height:100vh;			/*  vh뷰포트 높이로 해서 전체화면 먹게 했습니다.  */
+    overflow:hidden;        /*  섹션 갯수대로 번호 줘서 수정할 수 있게... */
+}                           /*  그리고 오버플로우 넣어서 밑에 섹션 감췄습니다. */
+#fullpage section{
+    height:100vh;
+}
+
+
+body {
+    font-family: "나눔명조", NNMJ, 바탕, serif;
+}
+ 
+
+
+  
+
+
+
+/*-----------포스터 들어갈 공간----------*/
+#poster {
+    position: relative;
+    width: 1903px;
+    height: 100%;
+    background: #68e5d6;
+}
+.content {	height: 100%; }
+
+/*----- box 크기랑 배경색 지정 -----*/
+.box {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*----------- 1280px 컨텐츠 전체를 포함하는 div----------*/
+.poster-contents-wrap { padding: 70px; }
+
+
+
+  /*----- 첫 번째 페이지 -----*/
+#aaa .poster-contents-wrap > div {
+    width: 880px;
+}
+
+#aaa .mvname {
+    height: 70px;
+    margin-bottom: 55px;
+}
+#aaa .hanjul {
+    margin: 0px 15px 20px;
+}
+#aaa .hanjul p {
+    margin: 7px 0;
+}
+#aaa .starpoint {
+    margin-bottom: 90px;
+    padding: 0 10px;
+}
+#aaa .starpoint::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+#aaa .starpoint > img, #aaa .starpoint > div {
+    float: left;
+}
+#aaa .starpoint img {
+    margin-right: 5px;
+}
+#aaa .starpoint .float {
+    overflow:hidden;
+    box-sizing: content-box;
+    margin-right: 15px;
+}
+#aaa .starpoint .score {
+    display: block;
+    margin-left: 10px;
+}
+#aaa .preview {
+    height: 470px;
+    /* background-image: url("../img/singvod.jpg");*/
+}
+
+/*----- 두 번째 페이지 -----*/
+#bbb .poster-contents-wrap {
+    padding: 40px 70px;
+} 
+#bbb .synopsys {
+    width: 880px;
+    height: 460px;
+    margin-bottom: 50px;
+}
+
+#bbb .synopsys img {display: block;}
+
+#bbb .synopsys h3 {margin: 15px 0;}
+
+#bbb .articles::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+#bbb .articles .article {
+    width: 270px;
+    height: 360px;
+    display: block;
+    margin-right: 35px;
+    float: left;
+}
+
+/*----- 세 번째 페이지 -----*/
+#ccc .mvimgs > div {
+    float: left;
+    cursor: pointer;
+}
+
+#ccc .mvimgsTop {
+    width: 340px;
+    height: 355px;
+    margin: 0 0 30px 15px;
+}
+
+#ccc .mvimgsBottom {
+    width: 555px;
+    height: 425px;
+    margin-left: 30px;
+}
+
+#ccc .mvimgs > div:nth-child(3n-2) {
+    margin-left: 0;
+}
+
+#ccc .mvimgs > div:nth-child(3) {
+    width: 430px;
+}
+
+#ccc .mvimgs::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* ------글씨 및 배경색, 이미지 설정---------- */
+
+.box {
+    background: rgba(0, 0, 0, .7);
+}
+.poster-contents-wrap {
+    font-size: 22px;
+    letter-spacing: -2px;
+    word-spacing: 4px;
+    color: white;
+}
+#aaa .poster-contents-wrap > div {
+    /* background: gray;  경계 구별을 위한 임시방편 */
+}
+
+#aaa .hanjul p:first-child{
+    font-size: 37px;
+}
+#aaa .starpoint .score {
+    font-size: 37px;
+    line-height: 60px;
+}
+
+#bbb .synopsys {
+    font-size: 21px;
+    line-height: 200%;
+    text-align: justify;
+}
+
+#bbb .synopsys h3 {font-size: 1.5em;}
+
+
+
+

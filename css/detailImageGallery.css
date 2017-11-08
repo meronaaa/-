@@ -1,0 +1,38 @@
+/* 이미지 갤러리 */
+  .blackBox {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.7);
+      }
+  .imageDisplay {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      overflow: hidden;
+  }
+  .imageDisplay .imageList {
+      position: relative;
+  }
+  .imageDisplay .imageList img {
+      width: 1280px;
+      height: 630px;
+      float: left;
+      position: relative;
+  }
+  .buttons {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+  }
+  .buttons div {
+      position: absolute;
+      cursor: pointer;
+  }
+  .buttons .rightButton, .buttons .leftButton {
+      z-index: 100;
+      top: -50px;
+  }

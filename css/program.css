@@ -1,0 +1,93 @@
+/* 프로그램 페이지 전용 스타일시트*/
+
+.introduce-wrap {
+    width: 100% !important;
+    margin: 0 !important;
+    background-size: cover;
+}
+
+.introduce-wrap>div {
+    height: 500px;
+}
+
+.introduce-wrap>div div {
+    height: inherit;
+}
+
+.introduce-wrap .introduceBG:first-child {
+    background: url(../img/sing_street/singstreet.jpg) fixed no-repeat left top;
+}
+
+.introduce-wrap .introduceBG:nth-child(2) {
+    background: url(../img/logan/logan.jpg) fixed no-repeat left top;
+}
+
+.introduce-wrap .introduceBG:nth-child(3) {
+    background: url(../img/carol/carol.jpg) fixed no-repeat left top;
+}
+
+.introduce-wrap .introduceBG:nth-child(4) {
+    background: url(../img/handmaiden/handmaiden.jpg) fixed no-repeat left top;
+}
+
+.introduce-wrap .introduceBG:nth-child(5) {
+    background: url(../img/lalaland/lalaland.jpg) fixed no-repeat left top;
+}
+
+.introduce-wrap .introduceBG:nth-child(6) {
+    background: url(../img/moonlight/moonlight.jpg) fixed no-repeat left top;
+}
+
+.introduce-wrap .introduceGray {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background 0.5s;
+}
+
+.introduce-wrap .introduceGray:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.introduce-wrap .introduce {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.introduce-wrap .introduce::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.introduce-wrap .introduceLeft {
+    width: 493px;
+    float: left;
+}
+
+.introduce-wrap .introduceRight {
+    width: 787px;
+    float: right;
+}
+
+.introduce-wrap .introduceLeft img {
+    display: block;
+    width: 240px;
+    height: 346px;
+    margin-top: 76px;
+    float: right;
+}
+
+.introduce-wrap .introduceRight h4,
+.introduce-wrap .introduceRight p {
+    text-align: center;
+    color: #fff;
+    margin: 8px 0;
+}
+.introduce-wrap .introduceRight hr {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.introduce-wrap .introduceRight h4 {
+    font-size: 120%;
+    padding: 125px 0 40px;
+}

@@ -1,0 +1,734 @@
+
+@font-face {
+    font-family: NNSQ;
+    src: url(../fonts/NanumSquare.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+div,
+img {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: NanumSquare, NNSQ, Calibri, "맑은 고딕", sans-serif;
+}
+
+#header_wrap {
+    background: white;
+}
+
+.skip {
+    /* display: none;*/
+    text-align: center;
+}
+
+#contents-wrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#header_wrap,
+#contents-wrap,
+#nav,
+#slider,
+#footer {
+    background-color: white;
+}
+
+
+/*-----------------------header-------------------------*/
+
+#header {
+    height: 160px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#header span {
+    font-size: 20px;
+}
+
+#header-nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#header-nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+#header-nav ul li a {
+    color: black;
+    font-size: 14px;
+}
+
+.logo_img {
+    padding-top: 41px;
+    margin: 0 auto;
+    width: 270px;
+    height: 150px;
+}
+
+
+/*------------------------------------------------*/
+
+#nav {
+    position: absolute;
+    display: block;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    background: #9c0000;
+    box-shadow: rgba(0, 0, 0, .4) 0px 3px 5px;
+    z-index: 1000;
+    /* <-------- z-index 추가*/
+}
+
+#nav ul {
+    width: 1280px;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+#nav ul li {
+    box-sizing: border-box;
+    display: block;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    background: url(../img/whiteBar.png) no-repeat 255px 10px;
+}
+
+#nav ul li a {
+    color: white;
+    display: block;
+    background: url(../img/whiteBar.png) no-repeat -3px 10px;
+}
+
+#nav ul li:first-child a {
+    background-position: -2px 10px;
+}
+
+#nav ul li:last-child {
+    background-position: 254px 10px;
+}
+
+#nav ul li:hover {
+    background-color: #f4f4f4;
+}
+
+#nav ul li:hover a {
+    color: #9c0000;
+}
+
+#nav ul li:hover a.on {
+    color: black;
+}
+
+#nav ul li a.on {
+    color: black;
+}
+
+
+/*------------------------------------------------*/
+
+#slider {
+    width: 100%;
+    height: 660px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #323232;
+    margin-top: 50px;
+}
+
+.slider-pictogram {
+    width: 35%;
+    margin: 0 auto;
+    height: 100px;
+    display: block;
+    text-align: center;
+}
+
+.slider-pictogram ul {
+    text-align: center;
+}
+
+.slider-pictogram ul li {
+    display: block;
+    width: 20%;
+    float: left;
+    padding-top: 30px;
+}
+
+#slider+#contents-wrap {
+    padding-top: 0;
+}
+
+
+/*------------------------------------------------*/
+
+#contents {
+    height: 100%;
+    margin: 0 auto;
+}
+
+#contents-blank {
+    content: " ";
+    height: 100px;
+    display: block;
+}
+
+
+/*---------------------footer----------------------*/
+
+#footer {
+    background-color: #323232;
+    font-size: 15px;
+    color: #919090;
+    width: 100%;
+    height: 190px;
+}
+
+#footer-wrap {
+    width: 660px;
+    margin: 0 auto;
+}
+
+#footer_nav {
+    text-align: left;
+    margin: 0 auto;
+}
+
+#footer_nav ul {
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+#footer_nav ul li {
+    margin: auto;
+    display: inline;
+}
+
+#footer_nav ul li a {
+    margin: 20px;
+    color: #919090;
+    text-decoration: none;
+}
+
+#footer_info {
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 25px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.footer_info_name {
+    float: left;
+    margin-right: 60px;
+}
+
+.footer_info_address {
+    float: left;
+}
+
+
+/* nav '프로그램소개'의 드롭다운 */
+
+.dropdown_contents {
+    display: none;
+}
+
+.info-box {
+    padding: 40px;
+}
+
+.info-box::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.opening-title {
+    width: 400px;
+    height: 80px;
+    float: left;
+    font-size: 15px;
+    text-align: left;
+    line-height: 70px;
+}
+
+.opening-content {
+    width: 800px;
+    height: 80px;
+    float: right;
+}
+
+.article-img {
+    width: 400px;
+    height: 200px;
+    background: green;
+    float: left;
+    padding-top: 13px;
+}
+
+.article-content {
+    width: 780px;
+    height: 200px;
+    background: white;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding: 13px 10px;
+}
+
+.competition-title {
+    width: 400px;
+    height: 80px;
+    float: left;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    line-height: 70px;
+}
+
+.competition-content {
+    width: 800px;
+    height: 80px;
+    float: right;
+}
+
+.ending-title {
+    width: 400px;
+    height: 80px;
+    float: left;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    line-height: 70px;
+}
+
+.ending-content {
+    width: 800px;
+    height: 80px;
+    float: right;
+}
+
+
+/*-----소개 페이지 공통 스타일-----*/
+
+.opening-title,
+.opening-content,
+.competition-title,
+.competition-content,
+.ending-title,
+.ending-content {
+    /*border-bottom: 5px solid black;*/
+}
+
+.article-img,
+.article-content {
+    margin-bottom: 90px;
+    border-top: 3px solid #323232;
+}
+
+
+/*----------------------------*/
+
+.img-box {
+    background: gray;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*============================================== 소개 페이지 끝 ===========================================*/
+
+
+/* ----------------index contents-----------------*/
+
+#contents-pic {
+    padding: 40px;
+}
+
+.text1 {
+    width: 580px;
+    height: 240px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.text1 h3,
+.text2 h3 {
+    color: #9c0000;
+    padding: 15px;
+    background: #ddd url(../img/more.png) no-repeat 532px center;
+}
+
+.text1 h3 .TIFFtitle,
+.text2 h3 .TIFFtitle {
+    color: #000;
+}
+
+.text1 ul li,
+.text2 ul li {
+    padding: 10px 12px;
+}
+
+.text1 ul li h4,
+.text2 ul li h4 {
+    color: #9C0000;
+    margin-bottom: 5px;
+}
+
+.text1 ul li h4 .newDate {}
+
+.text1 ul li p,
+.text2 ul li p {
+    font-size: 110%;
+}
+
+.text2 {
+    width: 580px;
+    height: 240px;
+    float: right;
+    margin-bottom: 40px;
+}
+
+.pic1 {
+    /*-------포지션 추가 그냥 각각의 pic들을 틀로잡아서 포지션 relative 지정 후 */
+    background: gray;
+    /*-------맨 밑에 pic-on들을 한꺼번에 간단히 할 수 있도록 스타일 지정 */
+    width: 280px;
+    height: 600px;
+    float: left;
+    margin-right: 40px;
+    position: relative;
+    overflow: hidden;
+    /* <------- 각각의 픽에 오버플로우 히든 추가*/
+}
+
+.pic2 {
+    background: gray;
+    width: 280px;
+    height: 280px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic3 {
+    background: gray;
+    width: 560px;
+    height: 280px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic4 {
+    background: gray;
+    width: 560px;
+    height: 280px;
+    float: left;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic5 {
+    background: gray;
+    width: 280px;
+    height: 600px;
+    float: right;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic6 {
+    background: gray;
+    width: 280px;
+    height: 280px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic7 {
+    background: gray;
+    width: 560px;
+    height: 280px;
+    float: left;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic8 {
+    content: " ";
+    clear: both;
+}
+
+#donate {
+    text-align: center; 
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+#donate ul li {
+    display: inline-block;
+    margin-right: 25px;
+   
+}
+#donate ul li:last-child {
+    margin-right: 0;
+}
+
+
+/* 픽 온 추가과 픽 텍스트 추가
+-----------------------------------*/
+
+#pic-on {
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+#pic-text a {
+    color: white;
+}
+
+#pic-text h2 {
+    color: #b3b1b2;
+}
+
+#pic-text span {
+    color: #747273;
+    font-weight: 900;
+}
+
+.pic-text1 {
+    width: 280px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+    padding: 11px 20px 0 20px;
+    bottom: -269px;
+}
+
+.pic-text1 a {
+    line-height: 1.8em;
+}
+
+.pic-p1 {
+    width: 210px;
+}
+
+.pic-text2 {
+    width: 280px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+    padding: 11px 20px;
+    bottom: -115px;
+}
+
+.pic-text2 a {
+    line-height: 1.6em;
+}
+
+.pic-p2 {
+    width: 210px;
+}
+
+.pic-text3 {
+    width: 560px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+    padding: 11px 20px;
+    bottom: -120px;
+}
+
+.pic-text3 a {
+    line-height: 1.6em;
+}
+
+.pic-p3 {
+    width: 460px;
+}
+
+.pic-text4 {
+    width: 560px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+    padding: 11px 20px;
+    bottom: -100px;
+}
+
+.pic-text4 a {
+    line-height: 1.6em;
+}
+
+.pic-p4 {
+    width: 460px;
+}
+
+.pic-text5 {
+    width: 280px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+    padding: 11px 20px;
+    bottom: -220px;
+}
+
+.pic-text5 a {
+    line-height: 1.6em;
+}
+
+.pic-p5 {
+    width: 210px;
+}
+
+.pic-text6 {
+    width: 280px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+    padding: 11px 20px;
+    bottom: -145px;
+}
+
+.pic-text6 a {
+    line-height: 1.6em;
+}
+
+.pic-p6 {
+    width: 210px;
+}
+
+.pic-text7 {
+    width: 560px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+    padding: 11px 20px;
+    bottom: -120px;
+}
+
+.pic-text7 a {
+    line-height: 1.6em;
+}
+
+.pic-p7 {
+    width: 460px;
+}
+
+#nav li.on {
+    background-color: #353535;
+    color: black;
+}
+
+.map {
+    padding: 70px;
+}
+
+
+/*============ 스탭 소개 ============ */
+
+.staffWrap {
+    padding: 40px 45px;
+}
+
+.staffWrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.staffWrap h3 {
+    height: 70px;
+    border-top: 1.5px solid #666;
+    clear: both;
+    font: 400 27px/70px "나눔스퀘어", Calibri, "맑은 고딕", sans-serif;
+    color: #333;
+}
+
+.staffWrap h3::first-letter {
+    color: #ac1111;
+}
+
+.staffWrap .staffBox {
+    float: left;
+    width: 370px;
+    height: 250px;
+    margin: 0 40px 30px 0;
+}
+
+.staffWrap .staffBox::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.staffWrap .staffBox:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.staffWrap .staffBox img {
+    display: block;
+    width: 195px;
+    height: inherit;
+    margin-right: 15px;
+    float: left;
+}
+
+.staffWrap .staffBox .staffDscr {
+    width: 160px;
+    height: inherit;
+    float: left;
+}
+
+.staffWrap .staffBox .staffDscr h4 {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.staffWrap .staffBox .staffDscr p {
+    margin: 0.2em 0;
+}
+
+.staffWrap .staffBox .staffDscr p:last-child {
+    margin-top: 20px;
+}
+
+
+/* ============= 스탭소개 끝 ================= */
